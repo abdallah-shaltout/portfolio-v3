@@ -1,0 +1,20 @@
+[
+    {
+        "name": "facebook",
+        "link": "https://www.facebook.com/abdullahshaltout",
+        "iconName": "facebook",
+        "iconClass": "text-base"
+    },
+    {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/in/abdallahshaltout",
+        "iconName": "linkedin",
+        "iconClass": "text-base"
+    },
+    {
+        "name": "github",
+        "link": "https://github.com/abdallah-shaltout",
+        "iconName": "github",
+        "iconClass": "text-lg"
+    }
+]

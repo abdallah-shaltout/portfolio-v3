@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Urbanist";
+        @apply text-secondary-text bg-dark;
+    }
+}
+
+@layer components {
+    .trans {
+        @apply transition-colors duration-300 ease-in-out;
+    }
+
+    .t-trans {
+        @apply transition-transform duration-300 ease-in-out;
+    }
+    .trans-all {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    .container {
+        width: 90% !important;
+        max-width: 1440px !important;
+    }
+    .container-fluid {
+        width: 90% !important;
+        max-width: 100% !important;
+    }
+    .abs-center {
+        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+    .full-section {
+        min-height: calc(100svh - 96px);
+    }
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .border-color {
+        @apply border-gray-300/40;
+    }
+    .main-border {
+        @apply border  border-color;
+    }
+    .main-border-b {
+        @apply border-b border-color;
+    }
+    .main-border-t {
+        @apply border-t border-color;
+    }
+    .flex-between {
+        @apply flex justify-between items-center;
+    }
+    .fc {
+        @apply flex items-center;
+    }
+    .btn {
+        @apply px-5 py-1.5 rounded-full text-base;
+    }
+    .btn-lg {
+        @apply px-7 py-2.5 rounded-full text-lg;
+    }
+    .btn-xl {
+        @apply px-10 py-4 rounded-full text-xl;
+    }
+    .btn-light {
+        @apply bg-primary-text text-primary trans  hover:bg-white/80;
+    }
+    .btn-light-outline {
+        @apply bg-transparent outline outline-2 text-primary-text  outline-secondary-text trans hover:bg-white hover:text-dark;
+    }
+    .btn-primary {
+        @apply bg-primary text-primary-text trans  hover:bg-primary/70;
+    }
+    .btn-primary-outline {
+        @apply bg-transparent outline outline-2 text-primary  outline-primary trans hover:bg-primary hover:text-primary-text;
+    }
+
+    .bg-blur {
+        @apply absolute inset-0 w-full h-full backdrop-blur-lg -z-1;
+    }
+    .bg-blur-dark {
+        @apply bg-gradient-to-br from-dark/40 to-black/40;
+    }
+    .bg-blur-light {
+        background-image: none;
+        @apply bg-white/5;
+    }
+}
