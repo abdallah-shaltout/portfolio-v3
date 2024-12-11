@@ -1,12 +1,7 @@
 <template>
     <main>
         <AppHeader />
-        <LandingSection />
-        <AboutSection />
-        <ProjectSection />
-        <ClientsSection />
-        <SkillsSection />
-        <StartProjectSection />
+        <NuxtPage />
         <AppFooter />
     </main>
 </template>

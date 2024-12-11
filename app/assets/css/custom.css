@@ -1,11 +1,8 @@
-.carousel__track {
-    @apply gap-5;
-}
 .carousel__pagination {
     @apply gap-2 mt-6;
 }
 .carousel__pagination .carousel__pagination-item .carousel__pagination-button {
-    @apply w-2 h-2 transition-all ease-in-out duration-300 rounded-full bg-slate-50 after:hidden;
+    @apply w-2 h-2 transition-all ease-in-out duration-300 rounded-full bg-blue-500/40 after:hidden;
 }
 .carousel__pagination
     .carousel__pagination-item
@@ -23,7 +20,6 @@
     @apply -right-12;
 }
 
-
 .show-link-animate {
     animation: show-link 0.5s ease backwards;
 }
@@ -38,4 +34,52 @@
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.custom-image-clip-left {
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.custom-image-clip-right {
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.effect-slider-1 .carousel__viewport {
+    perspective: 2000px;
+}
+
+.effect-slider-1 .carousel__track {
+    transform-style: preserve-3d;
+}
+
+.effect-slider-1 .carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.effect-slider-1 .carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(-20deg) scale(0.9);
+}
+
+.effect-slider-1 .carousel__slide--active ~ .carousel__slide {
+    transform: rotateY(20deg) scale(0.9);
+}
+
+.effect-slider-1 .carousel__slide--prev {
+    opacity: 0.7;
+    transform: rotateY(-20deg) scale(0.95);
+}
+
+.effect-slider-1 .carousel__slide.carousel__slide--next {
+    opacity: 0.7;
+    transform: rotateY(20deg) scale(0.95);
+}
+
+.effect-slider-1 .carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1);
+}
+
+.section-title {
+    @apply relative hover:before:w-full before:transition-all duration-500 ease-in-out before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-1.5 before:translate-y-full before:rounded-full before:h-1.5 before:w-1/2 
+     before:bg-primary  before:content-[''];
 }

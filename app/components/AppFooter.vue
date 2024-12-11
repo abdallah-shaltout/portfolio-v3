@@ -3,14 +3,21 @@
         <div class="container">
             <div class="flex-between">
                 <p>
+                    <span class="uppercase text-dark">عبدالله شلتوت</span>
                     &copy; {{ new Date().getFullYear() }}
-                    <span class="uppercase text-primary-text">Abdallah Shaltout</span>
                 </p>
 
                 <ul class="fc gap-2.5">
                     <li v-for="(item, idx) in socialMedia" :key="idx">
-                        <a target="_blank" :href="item.link" class="w-8 h-8 rounded-full btn-primary-outline flex-center">
-                            <NuxtIcon :name="item.iconName" :class="item.iconClass" />
+                        <a
+                            target="_blank"
+                            :href="item.link"
+                            class="w-8 h-8 rounded-full btn-primary-outline flex-center"
+                        >
+                            <NuxtIcon
+                                :name="item.iconName"
+                                :class="item.iconClass"
+                            />
                         </a>
                     </li>
                 </ul>
@@ -20,5 +27,5 @@
 </template>
 
 <script lang="ts" setup>
-    import socialMedia from "~/assets/data/socialMedia.json";
+import socialMedia from '~/assets/data/socialMedia.json'
 </script>

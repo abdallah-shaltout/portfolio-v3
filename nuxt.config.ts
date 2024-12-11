@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    compatibilityDate: "2024-11-01",
+    compatibilityDate: '2024-11-01',
     devtools: { enabled: false },
-
+    devServer: {
+        port: 5173,
+    },
     future: {
         compatibilityVersion: 4,
     },
@@ -10,10 +12,11 @@ export default defineNuxtConfig({
     app: {
         head: {
             htmlAttrs: {
-                lang: "en",
+                lang: 'ar',
+                dir: 'rtl',
             },
-            charset: "utf-8",
-            viewport: "width=device-width, initial-scale=1",
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
         },
     },
 
@@ -23,11 +26,15 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    css: ["~/assets/fonts/stylesheet.css", "~/assets/css/master.css", "~/assets/css/custom.css"],
+    css: [
+        '~/assets/fonts/stylesheet.css',
+        '~/assets/css/master.css',
+        '~/assets/css/custom.css',
+    ],
     carousel: {
-        prefix: "vue3",
+        prefix: 'vue3',
     },
-    modules: ["@nuxt/image", "nuxt-swiper", "nuxt-icons", "vue3-carousel-nuxt"],
+    modules: ['@nuxt/image', 'nuxt-icons', 'vue3-carousel-nuxt'],
 
-    ssr: true,
-});
+    ssr: false,
+})

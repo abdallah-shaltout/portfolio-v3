@@ -2,31 +2,37 @@
     {
         "id": 1,
         "title": "E-commerce Platform",
-        "image": "https://imgur.com/znqXLUo.png",
+        "image": "/projects/image-1.jpg",
         "demo": "https://commerce.shaltoutdev.com"
     },
     {
         "id": 2,
         "title": "E-commerce Platform",
-        "image": "https://imgur.com/znqXLUo.png",
+        "image": "/projects/image-2.jpg",
         "demo": "https://commerce.shaltoutdev.com"
     },
     {
         "id": 3,
         "title": "E-commerce Platform",
-        "image": "https://imgur.com/znqXLUo.png",
+        "image": "/projects/image-3.jpg",
         "demo": "https://commerce.shaltoutdev.com"
     },
     {
         "id": 4,
         "title": "E-commerce Platform",
-        "image": "https://imgur.com/znqXLUo.png",
+        "image": "/projects/image-4.jpg",
         "demo": "https://commerce.shaltoutdev.com"
     },
     {
         "id": 5,
         "title": "E-commerce Platform",
-        "image": "https://imgur.com/znqXLUo.png",
+        "image": "/projects/image-5.jpg",
+        "demo": "https://commerce.shaltoutdev.com"
+    },
+    {
+        "id": 5,
+        "title": "E-commerce Platform",
+        "image": "/projects/image-6.jpg",
         "demo": "https://commerce.shaltoutdev.com"
     }
 ]

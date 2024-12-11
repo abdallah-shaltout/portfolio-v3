@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     body {
-        font-family: "Urbanist";
-        @apply text-secondary-text bg-dark;
+        @apply font-cairo bg-background;
     }
 }
 
@@ -53,11 +53,23 @@
     .flex-between {
         @apply flex justify-between items-center;
     }
+    .fl-2
+    {
+        @apply flex flex-col gap-2.5
+    }
+    .fl-5
+    {
+        @apply flex flex-col gap-5
+    }
+    .fl-5
+    {
+        @apply flex flex-col gap-5
+    }
     .fc {
         @apply flex items-center;
     }
     .btn {
-        @apply px-5 py-1.5 rounded-full text-base;
+        @apply px-5 py-2 rounded-full text-base;
     }
     .btn-lg {
         @apply px-7 py-2.5 rounded-full text-lg;
@@ -65,10 +77,8 @@
     .btn-xl {
         @apply px-10 py-4 rounded-full text-xl;
     }
-    .btn-light {
-        @apply bg-primary-text text-primary trans  hover:bg-white/80;
-    }
-    .btn-light-outline {
+   
+    .btn-primary-outline {
         @apply bg-transparent outline outline-2 text-primary-text  outline-secondary-text trans hover:bg-white hover:text-dark;
     }
     .btn-primary {

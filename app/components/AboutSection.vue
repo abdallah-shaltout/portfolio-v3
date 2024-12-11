@@ -1,44 +1,34 @@
 <template>
-    <section class="py-40 md:py-20 main-border border-r-0 border-l-0" id="about">
-        <div class="container h-full md:flex-col fc gap-12">
-            <div class="flex-1 h-full relative">
-                <NuxtImg
-                    loading="lazy"
-                    src="/me.jpeg"
-                    class="h-full grayscale trans-all rounded-xl hover:grayscale-0 flex-1 object-cover" />
-            </div>
-            <div class="flex-1 flex justify-center flex-col gap-2 h-full">
-                <span class="btn btn-primary-outline w-fit mb-5"> About </span>
-                <h3 class="text-primary-text text-5xl font-bold">Web Developer</h3>
-
-                <p class="text-xl mt-5 mb-12 light-span">
-                    Hello, I'm <span>Md Titumir Anan</span>, a passionate
-                    <span>Junior Frontend Developer</span>
-                    from Bangladesh with a knack for turning design concepts into
-                    <span>responsive</span> and visually appealing websites. Adept at HTML, CSS,
-                    JavaScript, React, Next JS and complemented by my cyber security expertise. I
-                    thrive on creating seamless user experiences. Committed to staying
-                    <span>ahead in web development trends</span> and delivering top-notch projects
-                    with satisfaction.
+    <section>
+        <div
+            class="fc gap-4 bg-dark h-80 text-slate-50 rounded-lg overflow-hidden"
+        >
+            <div class="flex-1 pr-10">
+                <h2
+                    class="font-bold text-3xl w-fit before:!right-0 before:!translate-x-0 section-title"
+                >
+                    من نحن
+                </h2>
+                <p class="mt-4">
+                    جاليـفورد تراي هي إحدى أبرز مجموعات البناء في المملكة
+                    المتحدة، تعمل على تحسين البيئة العمرانية في البلاد وتقديم
+                    تغييرات مستدامة للمجتمعات التي نخدمها.
                 </p>
-
-                <ul class="flex flex-col gap-2">
-                    <li class="fc gap-1 font-medium">
-                        <NuxtIcon name="whatsapp" class="text-4xl" />
-                        <span class="text-lg">+{{ appSettings.whatsappNumber }}</span>
-                    </li>
-                    <li class="fc gap-3 font-medium">
-                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <NuxtIcon name="email" filled class="text-3xl" />
-
-                        <span class="text-lg">{{ appSettings.email }}</span>
-                    </li>
-                </ul>
+                <button
+                    class="whitespace-nowrap fc gap-2 pl-4 mt-5 pr-2 py-2 rounded-full bg-primary text-primary-text trans hover:bg-primary/80 font-semibold"
+                >
+                    <span>اقرا المزيد</span>
+                    <span class="rotate-180">
+                        <NuxtIcon name="arrow-right" class="text-sm" />
+                    </span>
+                </button>
+            </div>
+            <div class="flex-1 h-full">
+                <NuxtImg
+                    src="/images/workers.jpg"
+                    class="custom-image-clip-right h-full object-cover mr-auto"
+                />
             </div>
         </div>
     </section>
 </template>
-
-<script lang="ts" setup>
-    import appSettings from "~/assets/data/app.json";
-</script>
